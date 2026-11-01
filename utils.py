@@ -27,39 +27,3 @@ def charger_split(split=None, chemin=SPLITS_CSV):
     if split is not None:
         df = df[df["split"] == split].reset_index(drop=True)
     return df
-
-
-# ---------------------------------------------------------------
-# Ajouté par Hiba (notebook 02) : prétraitement et métriques communs
-# ---------------------------------------------------------------
-
-def redimensionner(img, masque, taille=256):
-    # Image : INTER_AREA | Masque : INTER_NEAREST pour rester en 0/1
-    img = cv2.resize(img, (taille, taille), interpolation=cv2.INTER_AREA)
-    masque = cv2.resize(masque, (taille, taille), interpolation=cv2.INTER_NEAREST)
-    return img, masque
-
-
-def metriques(pred, verite):
-    """Compare un masque prédit et le masque réel (tableaux 0/1 de même taille).
-    Image sans tumeur : Dice = IoU = mAP = 1 si rien n'est prédit, 0 sinon ; rappel = NaN.
-    mAP : proportion des seuils d'IoU (0.50, 0.55, ..., 0.95) atteints par la prédiction."""
-    pred = pred.astype(bool)
-    verite = verite.astype(bool)
-    vp = np.logical_and(pred, verite).sum()
-    fp = np.logical_and(pred, ~verite).sum()
-    fn = np.logical_and(~pred, verite).sum()
-
-    if verite.sum() == 0:
-        ok = float(pred.sum() == 0)
-        return {"dice": ok, "iou": ok, "map": ok, "rappel": np.nan, "precision": ok}
-
-    iou = vp / (vp + fp + fn)
-    seuils = np.linspace(0.5, 0.95, 10)        # 0.50, 0.55, ..., 0.95
-    return {
-        "dice":      2 * vp / (2 * vp + fp + fn),
-        "iou":       iou,
-        "map":       float(np.mean(iou >= seuils)),
-        "rappel":    vp / (vp + fn),
-        "precision": vp / (vp + fp) if (vp + fp) > 0 else 0.0,
-    }

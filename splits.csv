@@ -115,7 +115,7 @@ benign (201),benign,val,data/Dataset_BUSI_with_GT/benign/benign (201).png,data/D
 benign (202),benign,train,data/Dataset_BUSI_with_GT/benign/benign (202).png,data/Dataset_BUSI_with_GT/benign/benign (202)_mask.png,1,469,552,0.006056673155959333,8c45f781ab8738d7e7bdb6e07d1f3aa3,105,2
 benign (203),benign,train,data/Dataset_BUSI_with_GT/benign/benign (203).png,data/Dataset_BUSI_with_GT/benign/benign (203)_mask.png,1,471,569,0.10228023238892682,fde08d9f0e6bc4d52a22d0697f46c30e,106,3
 benign (204),benign,test,data/Dataset_BUSI_with_GT/benign/benign (204).png,data/Dataset_BUSI_with_GT/benign/benign (204)_mask.png,1,476,560,0.0529749399759904,015ca82e18260a69a41c9cab332de221,107,3
-benign (205),benign,val,data/Dataset_BUSI_with_GT/benign/benign (205).png,data/Dataset_BUSI_with_GT/benign/benign (205)_mask.png,1,477,557,0.22525584423894102,60c69e8933d1283dd865d5ab905443a7,108,1
+benign (205),benign,train,data/Dataset_BUSI_with_GT/benign/benign (205).png,data/Dataset_BUSI_with_GT/benign/benign (205)_mask.png,1,477,557,0.22525584423894102,60c69e8933d1283dd865d5ab905443a7,157,2
 benign (206),benign,train,data/Dataset_BUSI_with_GT/benign/benign (206).png,data/Dataset_BUSI_with_GT/benign/benign (206)_mask.png,1,485,569,0.05380392441070426,56f4e99fdfc32f17fda795ce51077815,109,2
 benign (207),benign,train,data/Dataset_BUSI_with_GT/benign/benign (207).png,data/Dataset_BUSI_with_GT/benign/benign (207)_mask.png,1,481,562,0.12297926176929735,3043177a6d99c0bced77a727a0aa88f7,110,2
 benign (208),benign,train,data/Dataset_BUSI_with_GT/benign/benign (208).png,data/Dataset_BUSI_with_GT/benign/benign (208)_mask.png,1,479,562,0.011994888520717093,2e7dbda985be91325aef1ee35e511440,111,2
@@ -132,8 +132,8 @@ benign (217),benign,train,data/Dataset_BUSI_with_GT/benign/benign (217).png,data
 benign (218),benign,train,data/Dataset_BUSI_with_GT/benign/benign (218).png,data/Dataset_BUSI_with_GT/benign/benign (218)_mask.png,1,396,602,0.12604030336588476,3040ffc533296234e6d20591281f9b21,122,2
 benign (219),benign,test,data/Dataset_BUSI_with_GT/benign/benign (219).png,data/Dataset_BUSI_with_GT/benign/benign (219)_mask.png,1,396,608,0.025414506911217438,944b456ecaafe1a8e277038bd4ccebfe,123,2
 benign (22),benign,test,data/Dataset_BUSI_with_GT/benign/benign (22).png,data/Dataset_BUSI_with_GT/benign/benign (22)_mask.png,1,463,562,0.0524238487967226,29df6842f3d85010e6ea12a59606f072,124,1
-benign (220),benign,val,data/Dataset_BUSI_with_GT/benign/benign (220).png,data/Dataset_BUSI_with_GT/benign/benign (220)_mask.png,1,396,609,0.031787497304738684,36d1468aba2537eaf2bc1612710a85d8,125,1
-benign (221),benign,train,data/Dataset_BUSI_with_GT/benign/benign (221).png,data/Dataset_BUSI_with_GT/benign/benign (221)_mask.png,1,394,610,0.008779229424981277,cc52febd892ee0f60755972edae1947f,126,1
+benign (220),benign,train,data/Dataset_BUSI_with_GT/benign/benign (220).png,data/Dataset_BUSI_with_GT/benign/benign (220)_mask.png,1,396,609,0.031787497304738684,36d1468aba2537eaf2bc1612710a85d8,160,2
+benign (221),benign,train,data/Dataset_BUSI_with_GT/benign/benign (221).png,data/Dataset_BUSI_with_GT/benign/benign (221)_mask.png,1,394,610,0.008779229424981277,cc52febd892ee0f60755972edae1947f,126,2
 benign (222),benign,train,data/Dataset_BUSI_with_GT/benign/benign (222).png,data/Dataset_BUSI_with_GT/benign/benign (222)_mask.png,1,392,605,0.03504385225164446,f20a1329a4a3135da1349b096991042a,127,2
 benign (223),benign,train,data/Dataset_BUSI_with_GT/benign/benign (223).png,data/Dataset_BUSI_with_GT/benign/benign (223)_mask.png,1,465,562,0.027708261584969196,4b520c9fa76c024f80e82340ec111ee0,128,2
 benign (224),benign,train,data/Dataset_BUSI_with_GT/benign/benign (224).png,data/Dataset_BUSI_with_GT/benign/benign (224)_mask.png,1,469,568,0.12545046397789725,3bd1a01c3d730dc1f4206299c8ea7751,129,2
@@ -160,7 +160,7 @@ benign (242),benign,train,data/Dataset_BUSI_with_GT/benign/benign (242).png,data
 benign (243),benign,train,data/Dataset_BUSI_with_GT/benign/benign (243).png,data/Dataset_BUSI_with_GT/benign/benign (243)_mask.png,1,473,561,0.10467565846250089,0cae1153b60f7535f42503c0a2a9889e,150,1
 benign (244),benign,val,data/Dataset_BUSI_with_GT/benign/benign (244).png,data/Dataset_BUSI_with_GT/benign/benign (244)_mask.png,1,475,561,0.020561028239046816,de63ddbe8a71570942be65da44cb04d8,151,2
 benign (245),benign,train,data/Dataset_BUSI_with_GT/benign/benign (245).png,data/Dataset_BUSI_with_GT/benign/benign (245)_mask.png,1,465,560,0.021693548387096775,4f9a17c5defbdf163afa8963657bc465,152,2
-benign (246),benign,val,data/Dataset_BUSI_with_GT/benign/benign (246).png,data/Dataset_BUSI_with_GT/benign/benign (246)_mask.png,1,331,526,0.007914718619691452,c387fd8970136436183257680964c49e,153,1
+benign (246),benign,train,data/Dataset_BUSI_with_GT/benign/benign (246).png,data/Dataset_BUSI_with_GT/benign/benign (246)_mask.png,1,331,526,0.007914718619691452,c387fd8970136436183257680964c49e,126,2
 benign (247),benign,train,data/Dataset_BUSI_with_GT/benign/benign (247).png,data/Dataset_BUSI_with_GT/benign/benign (247)_mask.png,1,396,469,0.014806917791992419,c88d8fc151b6f6538cd8b3d20e26c650,142,2
 benign (248),benign,train,data/Dataset_BUSI_with_GT/benign/benign (248).png,data/Dataset_BUSI_with_GT/benign/benign (248)_mask.png,1,385,472,0.011919436495707682,d06e269254aa3cde4a83cfbb07f2cc47,100,2
 benign (249),benign,test,data/Dataset_BUSI_with_GT/benign/benign (249).png,data/Dataset_BUSI_with_GT/benign/benign (249)_mask.png,1,395,465,0.04960936436640806,a168fad4bddc1a4a7ababbaa7ba30b9b,107,3
@@ -178,7 +178,7 @@ benign (259),benign,train,data/Dataset_BUSI_with_GT/benign/benign (259).png,data
 benign (26),benign,test,data/Dataset_BUSI_with_GT/benign/benign (26).png,data/Dataset_BUSI_with_GT/benign/benign (26)_mask.png,1,471,554,0.12880651812335686,bb760990d6d7665028af4c150d85be2d,155,1
 benign (260),benign,train,data/Dataset_BUSI_with_GT/benign/benign (260).png,data/Dataset_BUSI_with_GT/benign/benign (260)_mask.png,1,331,498,0.0555029786821,0e573d29b015ff516214e74506a90d8b,156,2
 benign (261),benign,val,data/Dataset_BUSI_with_GT/benign/benign (261).png,data/Dataset_BUSI_with_GT/benign/benign (261)_mask.png,1,386,469,0.12226984986245677,618a79f3abb7d3f459d395c89c685a98,140,2
-benign (262),benign,train,data/Dataset_BUSI_with_GT/benign/benign (262).png,data/Dataset_BUSI_with_GT/benign/benign (262)_mask.png,1,401,471,0.22579432522727153,b52e80525ae62aa60fbc8e7dddefe5d4,157,1
+benign (262),benign,train,data/Dataset_BUSI_with_GT/benign/benign (262).png,data/Dataset_BUSI_with_GT/benign/benign (262)_mask.png,1,401,471,0.22579432522727153,b52e80525ae62aa60fbc8e7dddefe5d4,157,2
 benign (263),benign,train,data/Dataset_BUSI_with_GT/benign/benign (263).png,data/Dataset_BUSI_with_GT/benign/benign (263)_mask.png,1,390,465,0.03161841742486904,ac3c1356effe2bd3c11a55b2400119e5,131,3
 benign (264),benign,train,data/Dataset_BUSI_with_GT/benign/benign (264).png,data/Dataset_BUSI_with_GT/benign/benign (264)_mask.png,1,391,462,0.08997353882264368,ec5ea8c1b04a9046c8fe7dfc17b564c1,143,2
 benign (265),benign,train,data/Dataset_BUSI_with_GT/benign/benign (265).png,data/Dataset_BUSI_with_GT/benign/benign (265)_mask.png,1,328,544,0.06773448708751793,12bf2fea2e469842ecb08af248c4424c,120,2
@@ -187,7 +187,7 @@ benign (267),benign,train,data/Dataset_BUSI_with_GT/benign/benign (267).png,data
 benign (268),benign,train,data/Dataset_BUSI_with_GT/benign/benign (268).png,data/Dataset_BUSI_with_GT/benign/benign (268)_mask.png,1,330,506,0.09128638160258713,a77603cf667f65d801fa0b653124f746,121,2
 benign (27),benign,val,data/Dataset_BUSI_with_GT/benign/benign (27).png,data/Dataset_BUSI_with_GT/benign/benign (27)_mask.png,1,576,774,0.015109101349411427,e72789e2b46a83a39d35171217a4d93f,159,1
 benign (270),benign,train,data/Dataset_BUSI_with_GT/benign/benign (270).png,data/Dataset_BUSI_with_GT/benign/benign (270)_mask.png,1,328,500,0.02223170731707317,f928063a738d8c8cfed1caaae2cd1cfe,119,2
-benign (271),benign,train,data/Dataset_BUSI_with_GT/benign/benign (271).png,data/Dataset_BUSI_with_GT/benign/benign (271)_mask.png,1,324,510,0.0324558218349068,700bfcb2ed3efca67b151c6369376ce8,160,1
+benign (271),benign,train,data/Dataset_BUSI_with_GT/benign/benign (271).png,data/Dataset_BUSI_with_GT/benign/benign (271)_mask.png,1,324,510,0.0324558218349068,700bfcb2ed3efca67b151c6369376ce8,160,2
 benign (272),benign,test,data/Dataset_BUSI_with_GT/benign/benign (272).png,data/Dataset_BUSI_with_GT/benign/benign (272)_mask.png,1,326,498,0.06492842535787322,394325a8a952654791af269f9087fa16,123,2
 benign (273),benign,train,data/Dataset_BUSI_with_GT/benign/benign (273).png,data/Dataset_BUSI_with_GT/benign/benign (273)_mask.png,1,469,560,0.1049383186110265,a20be6739b47b2273ac3ad8349482481,106,3
 benign (274),benign,train,data/Dataset_BUSI_with_GT/benign/benign (274).png,data/Dataset_BUSI_with_GT/benign/benign (274)_mask.png,1,471,556,0.14199468450717134,854bbea99788fa07b53c82d82b90963d,103,3
@@ -666,7 +666,7 @@ normal (129),normal,train,data/Dataset_BUSI_with_GT/normal/normal (129).png,data
 normal (13),normal,train,data/Dataset_BUSI_with_GT/normal/normal (13).png,data/Dataset_BUSI_with_GT/normal/normal (13)_mask.png,1,574,779,0.0,b54a8ca5d1c7fd643e4229cdcf18efef,544,2
 normal (130),normal,train,data/Dataset_BUSI_with_GT/normal/normal (130).png,data/Dataset_BUSI_with_GT/normal/normal (130)_mask.png,1,477,739,0.0,edde15d0e1779494e2f50b36983ee95a,545,2
 normal (131),normal,train,data/Dataset_BUSI_with_GT/normal/normal (131).png,data/Dataset_BUSI_with_GT/normal/normal (131)_mask.png,1,574,669,0.0,5c2bcf10517093aa379e9f29eda3f2e4,546,2
-normal (132),normal,val,data/Dataset_BUSI_with_GT/normal/normal (132).png,data/Dataset_BUSI_with_GT/normal/normal (132)_mask.png,1,700,857,0.0,81f4b48826e5b86ff0d10410eed6d7f5,547,1
+normal (132),normal,train,data/Dataset_BUSI_with_GT/normal/normal (132).png,data/Dataset_BUSI_with_GT/normal/normal (132)_mask.png,1,700,857,0.0,81f4b48826e5b86ff0d10410eed6d7f5,555,2
 normal (133),normal,test,data/Dataset_BUSI_with_GT/normal/normal (133).png,data/Dataset_BUSI_with_GT/normal/normal (133)_mask.png,1,471,560,0.0,061d7d5b9b90188ae296b9e162f10ae4,548,1
 normal (14),normal,train,data/Dataset_BUSI_with_GT/normal/normal (14).png,data/Dataset_BUSI_with_GT/normal/normal (14)_mask.png,1,581,765,0.0,47a1d07f183104b47986f12f65c8f04c,549,1
 normal (15),normal,train,data/Dataset_BUSI_with_GT/normal/normal (15).png,data/Dataset_BUSI_with_GT/normal/normal (15)_mask.png,1,464,554,0.0,581ed64b114f9d90b20ba6cf7ea1d37d,550,1
@@ -675,7 +675,7 @@ normal (17),normal,train,data/Dataset_BUSI_with_GT/normal/normal (17).png,data/D
 normal (18),normal,train,data/Dataset_BUSI_with_GT/normal/normal (18).png,data/Dataset_BUSI_with_GT/normal/normal (18)_mask.png,1,473,562,0.0,cbaed1b72657b9bdf055e83f1700ecc3,553,1
 normal (19),normal,train,data/Dataset_BUSI_with_GT/normal/normal (19).png,data/Dataset_BUSI_with_GT/normal/normal (19)_mask.png,1,566,660,0.0,4ea04a464d43fca8388ada9b493fa9fa,546,2
 normal (2),normal,train,data/Dataset_BUSI_with_GT/normal/normal (2).png,data/Dataset_BUSI_with_GT/normal/normal (2)_mask.png,1,471,552,0.0,dc0337600996738b8301ace2b70058c0,554,1
-normal (20),normal,train,data/Dataset_BUSI_with_GT/normal/normal (20).png,data/Dataset_BUSI_with_GT/normal/normal (20)_mask.png,1,687,851,0.0,f45bc813cd3501b92f597b7599ce8794,555,1
+normal (20),normal,train,data/Dataset_BUSI_with_GT/normal/normal (20).png,data/Dataset_BUSI_with_GT/normal/normal (20)_mask.png,1,687,851,0.0,f45bc813cd3501b92f597b7599ce8794,555,2
 normal (21),normal,train,data/Dataset_BUSI_with_GT/normal/normal (21).png,data/Dataset_BUSI_with_GT/normal/normal (21)_mask.png,1,463,545,0.0,585394a68dc8cfd9ee54d280dde54c8b,556,3
 normal (22),normal,train,data/Dataset_BUSI_with_GT/normal/normal (22).png,data/Dataset_BUSI_with_GT/normal/normal (22)_mask.png,1,470,552,0.0,94376693d2f8a90c021b12500b192659,539,2
 normal (23),normal,train,data/Dataset_BUSI_with_GT/normal/normal (23).png,data/Dataset_BUSI_with_GT/normal/normal (23)_mask.png,1,578,763,0.0,8d036fbfb13fd20f4c803e098b2befba,557,2
