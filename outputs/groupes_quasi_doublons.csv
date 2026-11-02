@@ -86,7 +86,7 @@ benign (282),benign,test,105
 benign (204),benign,test,105
 benign (249),benign,test,105
 benign (262),benign,train,106
-benign (205),benign,val,106
+benign (205),benign,train,106
 benign (303),benign,train,107
 benign (206),benign,train,107
 benign (207),benign,train,108
@@ -116,9 +116,9 @@ benign (218),benign,train,120
 benign (219),benign,test,121
 benign (272),benign,test,121
 benign (271),benign,train,123
-benign (220),benign,val,123
+benign (220),benign,train,123
 benign (221),benign,train,124
-benign (246),benign,val,124
+benign (246),benign,train,124
 benign (267),benign,train,125
 benign (222),benign,train,125
 benign (223),benign,train,126
@@ -271,7 +271,7 @@ normal (26),normal,train,532
 normal (19),normal,train,533
 normal (131),normal,train,533
 normal (20),normal,train,534
-normal (132),normal,val,534
+normal (132),normal,train,534
 normal (21),normal,train,542
 normal (63),normal,train,542
 normal (64),normal,train,542
