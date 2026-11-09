@@ -222,3 +222,8 @@ __marimo__/
 modeles/
 data/
 .jupyter/
+
+# Résultats d entraînement et poids (trop lourds pour git : Release GitHub)
+runs/
+runs_*/
+*.pth

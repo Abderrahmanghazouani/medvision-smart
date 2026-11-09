@@ -1,0 +1,20 @@
+# MedVision Smart - dépendances Python (testé avec Python 3.11)
+#
+# PyTorch : installer d'abord la version adaptée à la carte graphique depuis https://pytorch.org
+#   (ex. CUDA 12.x : pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121)
+#   puis : pip install -r requirements.txt
+torch>=2.2
+torchvision>=0.17
+segmentation-models-pytorch>=0.4.0   # U-Net, U-Net++, DeepLabV3+, SegFormer (encodeurs MiT)
+timm>=0.9
+numpy>=1.26
+pandas>=2.1
+opencv-python>=4.9
+scikit-learn>=1.4
+scipy>=1.11            # tests statistiques (Wilcoxon)
+matplotlib>=3.8
+seaborn>=0.13
+imagehash>=4.3         # détection des quasi-doublons
+Pillow>=10.0
+tqdm>=4.66
+jupyter>=1.0
