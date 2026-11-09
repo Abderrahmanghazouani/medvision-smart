@@ -152,7 +152,7 @@ if __name__ == "__main__":
     import pandas as pd
     lignes = []
     for nom in MODELES:
-        m = creer_modele(nom, pretrained=False)
+        m = creer_modele(nom, pretrained=False).eval()
         with torch.no_grad():
             sortie = m(torch.zeros(1, 3, 256, 256))
         assert sortie.shape == (1, 1, 256, 256), (nom, sortie.shape)

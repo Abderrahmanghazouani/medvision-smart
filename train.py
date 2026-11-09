@@ -141,7 +141,7 @@ def entrainer(dataset, modele, graine, lr=None, perte="bce_dice", epoques=60, pa
         net.train()
         ordre = np.random.permutation(len(Xtr))
         pertes = []
-        for k in range(0, len(ordre), batch):
+        for k in range(0, len(ordre) - batch + 1, batch):
             idx = ordre[k:k + batch]
             x, y = miroir_aleatoire(*vers_tenseur(Xtr[idx], Ytr[idx], device))
             opt.zero_grad()
