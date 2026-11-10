@@ -1,0 +1,15 @@
+,,,dice_val,dice_val,iou_val,iou_val,temps_entrainement_s,temps_entrainement_s,memoire_gpu_max_mo,memoire_gpu_max_mo,meilleure_epoque,meilleure_epoque
+,,,mean,std,mean,std,mean,std,mean,std,mean,std
+dataset,modele,lr,,,,,,,,,,
+busi,attention_unet,0.0001,0.742,,0.66,,181.1,,1339.7,,11.0,
+busi,attention_unet,0.001,0.647,,0.57,,141.3,,1339.6,,7.0,
+busi,deeplabv3plus,0.0001,0.742,,0.665,,164.1,,1010.1,,14.0,
+busi,deeplabv3plus,0.001,0.645,,0.567,,157.4,,1006.1,,12.0,
+busi,segformer,0.0001,0.738,,0.67,,294.5,,1980.2,,18.0,
+busi,segformer,0.001,0.676,,0.585,,289.0,,1978.4,,17.0,
+kvasir,attention_unet,0.0001,0.893,,0.831,,592.2,,1399.8,,17.0,
+kvasir,attention_unet,0.001,0.842,,0.764,,224.6,,1406.0,,11.0,
+kvasir,deeplabv3plus,0.0001,0.895,,0.83,,189.1,,1066.4,,11.0,
+kvasir,deeplabv3plus,0.001,0.857,,0.782,,284.9,,1070.4,,22.0,
+kvasir,segformer,0.0001,0.935,,0.886,,739.5,,2014.0,,41.0,
+kvasir,segformer,0.001,0.844,,0.762,,300.5,,2014.2,,10.0,
