@@ -1,0 +1,31 @@
+{
+  "dataset": "busi",
+  "modele": "segformer",
+  "graine": 0,
+  "lr": 0.0001,
+  "perte": "bce_dice",
+  "batch": 8,
+  "taille": 256,
+  "optimiseur": "Adam",
+  "epoques_max": 60,
+  "patience": 10,
+  "augmentation": "miroir horizontal p=0.5 (train uniquement)",
+  "normalisation": "pixels/255 puis moyenne/écart-type ImageNet",
+  "encodeur_pretraine": true,
+  "meilleure_epoque": 10,
+  "epoques_effectuees": 20,
+  "dice_val": 0.776525530275821,
+  "iou_val": 0.7052681295291559,
+  "perte_val": 0.5243097010411715,
+  "temps_entrainement_s": 191.2,
+  "memoire_gpu_max_mo": 1976.0,
+  "n_parametres": 24722369,
+  "n_couches": 119,
+  "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "smp": "0.6.0"
+  },
+  "n_train": 537,
+  "n_val": 114
+}

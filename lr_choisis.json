@@ -1,0 +1,12 @@
+{
+  "busi": {
+    "attention_unet": 0.0001,
+    "deeplabv3plus": 0.0001,
+    "segformer": 0.0001
+  },
+  "kvasir": {
+    "attention_unet": 0.0001,
+    "deeplabv3plus": 0.0001,
+    "segformer": 0.0001
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "dataset": "busi",
+  "modele": "deeplabv3plus",
+  "graine": 0,
+  "lr": 0.001,
+  "perte": "bce_dice",
+  "batch": 8,
+  "taille": 256,
+  "optimiseur": "Adam",
+  "epoques_max": 60,
+  "patience": 10,
+  "augmentation": "miroir horizontal p=0.5 (train uniquement)",
+  "normalisation": "pixels/255 puis moyenne/écart-type ImageNet",
+  "encodeur_pretraine": true,
+  "meilleure_epoque": 12,
+  "epoques_effectuees": 22,
+  "dice_val": 0.6450542687247055,
+  "iou_val": 0.5672234473924969,
+  "perte_val": 0.6627495853524459,
+  "temps_entrainement_s": 157.4,
+  "memoire_gpu_max_mo": 1006.1,
+  "n_parametres": 22437457,
+  "n_couches": 51,
+  "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "smp": "0.6.0"
+  },
+  "n_train": 537,
+  "n_val": 114
+}
