@@ -1,0 +1,8 @@
+algorithme,Dice moyen,IC 95 %,p (Holm) vs SegFormer,différence significative
+SegFormer,0.781,[0.734 ; 0.825],—,—
+U-Net++,0.755,[0.704 ; 0.802],0.7797,non
+DeepLabV3+,0.742,[0.683 ; 0.799],0.7797,non
+U-Net,0.74,[0.683 ; 0.793],0.7797,non
+Attention U-Net,0.736,[0.682 ; 0.787],0.2130,non
+CNN simple,0.689,[0.633 ; 0.740],0.0000,oui
+Otsu,0.088,[0.052 ; 0.133],0.0000,oui

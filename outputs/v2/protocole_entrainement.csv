@@ -1,0 +1,7 @@
+,optimiseur,perte,batch,taille,epoques_max,patience,encodeur_pretraine,lr BUSI,lr Kvasir-SEG
+CNN simple,Adam,bce_dice,8,256,60,10,False,0.001,0.001
+U-Net,Adam,bce_dice,8,256,60,10,True,0.0001,0.0001
+U-Net++,Adam,bce_dice,8,256,60,10,True,0.0001,0.0001
+Attention U-Net,Adam,bce_dice,8,256,60,10,True,0.0001,0.0001
+DeepLabV3+,Adam,bce_dice,8,256,60,10,True,0.0001,0.0001
+SegFormer,Adam,bce_dice,8,256,60,10,True,0.0001,0.0001

@@ -1,0 +1,8 @@
+,Dice test,rang Dice,paramètres (M),inférence (ms),groupe de tête
+SegFormer,0.781 ± 0.026,1,24.72,25.8,oui
+U-Net++,0.755 ± 0.028,2,26.08,15.5,oui
+DeepLabV3+,0.742 ± 0.011,3,22.44,12.3,oui
+U-Net,0.740 ± 0.018,4,24.44,13.5,oui
+Attention U-Net,0.736 ± 0.030,5,24.57,16.1,oui
+CNN simple,0.689 ± 0.017,6,1.75,6.5,
+Otsu,0.088 ± 0.000,7,0.0,1.6,
