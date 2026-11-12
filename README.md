@@ -108,16 +108,54 @@ Le nombre de couches et de paramètres de chaque réseau s'obtient avec `python 
 
 ## 5. Résultats
 
-> Résultats finaux en cours de calcul (6 réseaux × 5 graines × 2 datasets). Cette section sera complétée avec les tableaux en moyenne ± écart-type.
+Test évalué **une seule fois**, en moyenne ± écart-type sur **5 graines**. Détails, figures et tableaux complets : `04_evaluation.ipynb` et `outputs/v2/`.
 
-**Étape 1 (BUSI, une graine, test de 111 images) :**
+### 5.1 BUSI (test : 111 images, dont 18 sans lésion)
 
-| Modèle | Dice | Dice sur les lésions | Rappel | Tumeurs non détectées | ms / image |
+| Modèle | Dice | Dice sur les lésions | IoU | Précision | Rappel | mAP | IC 95 % du Dice |
+|---|---|---|---|---|---|---|---|
+| Otsu | 0,088 | 0,105 | 0,067 | 0,226 | 0,093 | 0,030 | [0,052 ; 0,133] |
+| CNN simple | 0,689 ± 0,017 | 0,685 ± 0,015 | 0,600 ± 0,017 | 0,732 ± 0,020 | 0,721 ± 0,018 | 0,417 ± 0,020 | [0,633 ; 0,740] |
+| U-Net | 0,740 ± 0,018 | 0,752 ± 0,017 | 0,672 ± 0,020 | 0,775 ± 0,025 | 0,757 ± 0,014 | 0,547 ± 0,032 | [0,683 ; 0,793] |
+| U-Net++ | 0,755 ± 0,028 | 0,763 ± 0,008 | 0,685 ± 0,026 | 0,795 ± 0,028 | 0,772 ± 0,016 | 0,556 ± 0,024 | [0,704 ; 0,802] |
+| Attention U-Net | 0,736 ± 0,030 | 0,752 ± 0,022 | 0,666 ± 0,032 | 0,764 ± 0,029 | 0,781 ± 0,028 | 0,537 ± 0,039 | [0,682 ; 0,787] |
+| DeepLabV3+ | 0,742 ± 0,011 | 0,755 ± 0,006 | 0,672 ± 0,011 | 0,781 ± 0,012 | 0,765 ± 0,011 | 0,538 ± 0,012 | [0,683 ; 0,799] |
+| **SegFormer** | **0,781 ± 0,026** | **0,773 ± 0,026** | **0,709 ± 0,032** | **0,798 ± 0,017** | **0,798 ± 0,033** | **0,573 ± 0,050** | [0,734 ; 0,825] |
+
+SegFormer obtient le meilleur Dice, mais l'écart avec U-Net, U-Net++, Attention U-Net et DeepLabV3+ **n'est pas significatif** (Wilcoxon apparié, correction de Holm, p ≥ 0,21) : ces 5 réseaux forment le groupe de tête. Le CNN simple et Otsu sont significativement moins bons (p < 0,001). Les tumeurs malignes sont les plus difficiles (Dice de 0,59 à 0,69, contre 0,73 à 0,82 pour les bénignes).
+
+### 5.2 Kvasir-SEG (test : 150 images)
+
+| Modèle | Dice | IoU | Précision | Rappel | mAP | IC 95 % du Dice |
+|---|---|---|---|---|---|---|
+| Otsu | 0,345 | 0,234 | 0,253 | 0,894 | 0,037 | [0,309 ; 0,380] |
+| CNN simple | 0,794 ± 0,005 | 0,696 ± 0,005 | 0,847 ± 0,026 | 0,800 ± 0,025 | 0,509 ± 0,004 | [0,764 ; 0,821] |
+| U-Net | 0,891 ± 0,007 | 0,828 ± 0,009 | 0,904 ± 0,016 | 0,908 ± 0,018 | 0,732 ± 0,013 | [0,869 ; 0,912] |
+| U-Net++ | 0,890 ± 0,012 | 0,827 ± 0,015 | 0,911 ± 0,012 | 0,897 ± 0,011 | 0,733 ± 0,022 | [0,867 ; 0,910] |
+| Attention U-Net | 0,895 ± 0,003 | 0,834 ± 0,003 | 0,918 ± 0,005 | 0,900 ± 0,009 | 0,741 ± 0,008 | [0,872 ; 0,917] |
+| DeepLabV3+ | 0,896 ± 0,004 | 0,831 ± 0,007 | 0,909 ± 0,007 | 0,910 ± 0,009 | 0,729 ± 0,016 | [0,875 ; 0,914] |
+| **SegFormer** | **0,916 ± 0,005** | **0,861 ± 0,005** | **0,923 ± 0,005** | **0,927 ± 0,008** | **0,790 ± 0,010** | [0,895 ; 0,932] |
+
+Sur Kvasir-SEG, SegFormer est **significativement meilleur que tous les autres** (p ≤ 0,0001). Les petits polypes sont les plus difficiles pour tous les modèles.
+
+### 5.3 Coûts (GPU, image 256 × 256)
+
+| Modèle | Paramètres | Couches | Inférence (ms/image) | Mémoire GPU à l'entraînement (Mo) | Entraînement (min, BUSI) |
 |---|---|---|---|---|---|
-| Otsu | 0,129 | 0,154 | 0,195 | 6 / 93 | 1,4 |
-| CNN simple | 0,732 | 0,691 | 0,697 | 1 / 93 | 4,8 |
-| **U-Net** | 0,729 | **0,741** | **0,752** | 2 / 93 | 11,5 |
-| U-Net++ | **0,752** | 0,736 | 0,740 | 10 / 93 | 14,8 |
+| Otsu | 0 | — | 0,4 à 1,6 (CPU) | — | — |
+| CNN simple | 1,75 M | 23 | 6,5 | 803 | 2,7 ± 0,7 |
+| U-Net | 24,4 M | 47 | 12,1 à 13,5 | 1 210 | 4,3 ± 1,5 |
+| U-Net++ | 26,1 M | 59 | 15,4 | 2 228 | 7,5 ± 2,4 |
+| Attention U-Net | 24,6 M | 59 | 16,1 à 16,6 | 1 343 | 3,2 ± 0,8 |
+| DeepLabV3+ | 22,4 M | 51 | 12,1 à 12,3 | 1 012 | 2,7 ± 0,3 |
+| SegFormer | 24,7 M | 119 | 25,8 à 27,2 | 1 978 | 4,4 ± 1,8 |
+
+### 5.4 Conclusion
+
+- **Précision :** SegFormer est le meilleur sur les deux datasets ; l'avance est nette sur Kvasir-SEG, mais pas significative sur BUSI.
+- **Coût :** SegFormer est aussi le plus lent (environ 2 fois plus que DeepLabV3+ ou U-Net).
+- **Compromis :** DeepLabV3+ est le plus rapide et le plus léger des réseaux du groupe de tête sur BUSI, avec un Dice proche (0,742 et 0,896).
+- **U-Net++ et U-Net (remarque 18) :** l'inversion observée à l'étape 1 (une seule graine) ne se confirme pas avec 5 graines ; U-Net++ est un peu devant U-Net sur le Dice global comme sur les lésions, mais l'écart reste inférieur à l'écart-type entre graines. Sur BUSI, le Dice global dépend aussi des 18 images saines (1 si rien n'est prédit, 0 sinon) : SegFormer en laisse 82 % vides, contre 66 à 71 % pour les autres réseaux, ce qui explique une partie de son avance.
 
 ## 6. Installation
 
@@ -166,7 +204,8 @@ medvision-smart/
 ├── 01_exploration_kvasir.ipynb   Kvasir-SEG : idem
 ├── 02_baselines.ipynb            Otsu et CNN simple
 ├── 03_unet_unetpp.ipynb          U-Net et U-Net++ (étape 1)
-├── 04_evaluation.ipynb           évaluation finale sur le test, analyse d'erreurs
+├── 04_evaluation.ipynb           évaluation finale (v2) : test, 5 graines, statistiques, erreurs, coûts
+├── 04_evaluation_etape1.ipynb    archive de l'étape 1 (une graine, BUSI)
 ├── models.py                     les 6 réseaux + complexité
 ├── train.py                      entraînement d'un modèle
 ├── run_all.py                    toutes les expériences (reprise automatique)
@@ -182,4 +221,6 @@ medvision-smart/
 - **Petits jeux de test** (111 et 150 images) : intervalles de confiance larges.
 - **Qualité des annotations** : 7 groupes d'images de BUSI étaient étiquetés de façon contradictoire.
 - **Seuil de décision fixé à 0,5**, non réglé.
+- **Otsu instable** : réglé sur la validation de BUSI (Dice 0,201), il tombe à 0,088 sur le test ; une méthode sans apprentissage ne s'adapte pas à la variabilité des échographies.
+- **Écarts parfois non significatifs** : sur BUSI, les 5 meilleurs réseaux ne se distinguent pas statistiquement.
 - **Usage pédagogique** : ces modèles ne sont pas des dispositifs médicaux.
